@@ -5,10 +5,13 @@ using Fusion;
 using Fusion.Sockets;
 using System;
 using UnityEngine.SceneManagement;
+using Fusion.Addons.Physics;
 
 public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
 {
     bool _mouseButton0;
+    bool _mouseButton1;
+    bool _mouseButton2;
 
     public void OnConnectedToServer(NetworkRunner runner)
     {
@@ -67,7 +70,17 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
         {
             data.Buttons.Set(NetworkInputData.MOUSEBUTTON0, _mouseButton0);
         }
+        if (_mouseButton1)
+        {
+            data.Buttons.Set(NetworkInputData.MOUSEBUTTON1, _mouseButton1);
+        }
+        if (_mouseButton2)
+        {
+            data.Buttons.Set(NetworkInputData.MOUSEBUTTON2, _mouseButton2);
+        }
         _mouseButton0 = false;
+        _mouseButton1 = false;
+        _mouseButton2 = false;
 
         input.Set(data);
     }
@@ -149,6 +162,8 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
     async void StartGame(GameMode mode)
     {
+        gameObject.AddComponent<RunnerSimulatePhysics3D>();
+
         _networkRunner = gameObject.AddComponent<NetworkRunner>();
         _networkRunner.ProvideInput = true;
 
@@ -185,5 +200,7 @@ public class BasicSpawner : MonoBehaviour, INetworkRunnerCallbacks
     private void Update()
     {
         _mouseButton0 = _mouseButton0 || Input.GetMouseButton(0);
+        _mouseButton1 = _mouseButton1 || Input.GetMouseButton(1);
+        _mouseButton2 = _mouseButton2 || Input.GetMouseButton(2);
     }
 }

@@ -231,7 +231,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefabBall: {fileID: 3897264014294281527, guid: 82d77a284186a154b93a33649a3f0184,
     type: 3}
-  Speed: 30
+  _prefabPhysXBall: {fileID: -7025985691511999743, guid: 0be5fda6ebfe73a4991b73dec9eb81ba,
+    type: 3}
+  Speed: 100
   FireSpeed: 0.33
 --- !u!114 &6187037519738894762
 MonoBehaviour:

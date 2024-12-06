@@ -10,6 +10,7 @@ Library: C:\Users\glshr\OneDrive\Belgeler\unity\Photon Fusion\Temp\BurstOutput\D
 --target-framework=NetFramework
 --float-mode=Fast
 --assembly-defines=Assembly-CSharp;
+--assembly-defines=Fusion.Addons.Physics;
 --assembly-defines=Fusion.Common;
 --assembly-defines=Fusion.Log;
 --assembly-defines=Fusion.Realtime;
@@ -53,6 +54,7 @@ Library: C:\Users\glshr\OneDrive\Belgeler\unity\Photon Fusion\Temp\BurstOutput\D
 --target-framework=NetFramework
 --float-mode=Fast
 --assembly-defines=Assembly-CSharp;
+--assembly-defines=Fusion.Addons.Physics;
 --assembly-defines=Fusion.Common;
 --assembly-defines=Fusion.Log;
 --assembly-defines=Fusion.Realtime;
@@ -94,6 +96,7 @@ Library: C:\Users\glshr\OneDrive\Belgeler\unity\Photon Fusion\Temp\BurstOutput\D
 --float-precision=Standard
 --target-framework=NetFramework
 --assembly-defines=Assembly-CSharp;
+--assembly-defines=Fusion.Addons.Physics;
 --assembly-defines=Fusion.Common;
 --assembly-defines=Fusion.Log;
 --assembly-defines=Fusion.Realtime;
@@ -141,6 +144,7 @@ Library: C:\Users\glshr\OneDrive\Belgeler\unity\Photon Fusion\Temp\BurstOutput\D
 --float-precision=Standard
 --target-framework=NetFramework
 --assembly-defines=Assembly-CSharp;
+--assembly-defines=Fusion.Addons.Physics;
 --assembly-defines=Fusion.Common;
 --assembly-defines=Fusion.Log;
 --assembly-defines=Fusion.Realtime;

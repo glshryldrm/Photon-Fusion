@@ -1,0 +1,604 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m3E790B31714A86B71E9D77FE305AD213AD3AA7B8 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m03DBFF42BFA68A90C2887A4C41779E936108A53E (void);
+extern void NetworkRigidbody2D_get_RBPosition_mE5239121C6E5FC96485231E203B6A7A50B6ADBA6 (void);
+extern void NetworkRigidbody2D_set_RBPosition_m43BB2EAAC63BD60A682870854FE9662F2AD00C83 (void);
+extern void NetworkRigidbody2D_get_RBRotation_m7E8AA84FCDE4E695FE1D40A75DD8E9E7DE1802DD (void);
+extern void NetworkRigidbody2D_set_RBRotation_m12314847F9E74F32912CA2C7BA23E776770FEA91 (void);
+extern void NetworkRigidbody2D_get_RBIsKinematic_m14205B4FF5F4E4BB60FC889EF2D18D30B5B59960 (void);
+extern void NetworkRigidbody2D_set_RBIsKinematic_mD17B0D3D5BC3CC5D9E9508C8773C44DBDF9C817C (void);
+extern void NetworkRigidbody2D_Awake_m0F682D01116C551E4D4A75E4F11B90BD56C218B0 (void);
+extern void NetworkRigidbody2D_GetRBIsKinematic_m014745E3E023D6841A774EBDF26E0944323AE781 (void);
+extern void NetworkRigidbody2D_SetRBIsKinematic_m39C6DAE72CDFC70A872A8E0CA0E9FC19C6BFD2AF (void);
+extern void NetworkRigidbody2D_CaptureRBPositionRotation_m5E284EFC117AC5FB2397E5F2E119A7A404BCE4A5 (void);
+extern void NetworkRigidbody2D_ApplyRBPositionRotation_m79AE960A304AC7295C47D0E04C15B4980B0D91E4 (void);
+extern void NetworkRigidbody2D_GetRBFlags_m71A76443D8D8C5BBED6CF78F0CB753B586CB9002 (void);
+extern void NetworkRigidbody2D_GetRBConstraints_mA76E0D58A571D02C7744C79C4B6F7335CA57F72F (void);
+extern void NetworkRigidbody2D_SetRBConstraints_m69429122193C6441588F5F16D1AB696BE663F51D (void);
+extern void NetworkRigidbody2D_CaptureExtras_m14E9DC7FD2BA89B8B9F031D7D841B254C0E0F726 (void);
+extern void NetworkRigidbody2D_ApplyExtras_m73D5D2EA3FD65264D6CDD9EE795DA6102D4A2F36 (void);
+extern void NetworkRigidbody2D_ResetRigidbody_mE5B9A5C79D1D40BB056F8A009FCABFA68250D994 (void);
+extern void NetworkRigidbody2D_IsRBSleeping_m8FF714A17CCBDC19620D31DFE09DD1AF6057183D (void);
+extern void NetworkRigidbody2D_ForceRBSleep_mAE809FB9F125AC68977B7073D5BDE5D7A2F381AC (void);
+extern void NetworkRigidbody2D_ForceRBWake_m2C315B4BD93C995C3959AE90D0CD319C9F7711E7 (void);
+extern void NetworkRigidbody2D_IsRigidbodyBelowSleepingThresholds_m8A1F498E19A49A6C1B940A5BDD07FB010178270A (void);
+extern void NetworkRigidbody2D_IsStateBelowSleepingThresholds_m8DE87E8520D21FE254D5B9239B7FA96A21AF63E0 (void);
+extern void NetworkRigidbody2D__ctor_mC9D8F9409D2BC2AB737FE9D4D6BAB07D844C2EDE (void);
+extern void NetworkRigidbody3D_get_RBPosition_m523E70834D2B40B0DA1F0483AF03510604055205 (void);
+extern void NetworkRigidbody3D_set_RBPosition_mD3D47FAE3BC583ECEB52C9FA66CD07B08D7008A6 (void);
+extern void NetworkRigidbody3D_get_RBRotation_m84234D31C719632D63783E11B0439FFCE886852B (void);
+extern void NetworkRigidbody3D_set_RBRotation_mD75576FDCEA59BBC22D11D6B56877B7F19AC09B4 (void);
+extern void NetworkRigidbody3D_get_RBIsKinematic_m250617B9250CF3D37CB31B15800B7FACD4B6FE69 (void);
+extern void NetworkRigidbody3D_set_RBIsKinematic_m8087A7ED7450382270B8B6C41DD2E9D62F665E9B (void);
+extern void NetworkRigidbody3D_Awake_m9D96D7366931F7183F2540B8311ABC038FD21513 (void);
+extern void NetworkRigidbody3D_GetRBIsKinematic_mD13117615494BD80966BAD5534B6F022001F5020 (void);
+extern void NetworkRigidbody3D_SetRBIsKinematic_mFDF9F62F6A161EDCCB9273F311D457DBB06431B2 (void);
+extern void NetworkRigidbody3D_CaptureRBPositionRotation_m1B0A163B896108C3D109E01CA956D4F1FC1BB224 (void);
+extern void NetworkRigidbody3D_ApplyRBPositionRotation_mA573456D26F7642FECE48E1B325994084F1F4521 (void);
+extern void NetworkRigidbody3D_GetRBFlags_m739FCC3E4253DDBF95FA2F5EB7F0897E0768183F (void);
+extern void NetworkRigidbody3D_GetRBConstraints_mB07F5A95E2F3203FABA6D83B618E9E88128A5899 (void);
+extern void NetworkRigidbody3D_SetRBConstraints_mB2356B5430B67FA285D6CD803E4F86895487D68F (void);
+extern void NetworkRigidbody3D_CaptureExtras_m03C85AE8A222BC9C353129D5A3809A58A3EE0FD0 (void);
+extern void NetworkRigidbody3D_ApplyExtras_mB1FA7BA483FA826F2923F87DF98B574E405157AB (void);
+extern void NetworkRigidbody3D_ResetRigidbody_m3D300A6C0AA93F4DE6A46B89BEE61F18EE3E6BDD (void);
+extern void NetworkRigidbody3D_IsRBSleeping_m64531CC1C04CE622B21F54FDFE67582DAC3F2904 (void);
+extern void NetworkRigidbody3D_ForceRBSleep_mD996E5A4F2CEEAFC86434D1C656FF22C99B505E7 (void);
+extern void NetworkRigidbody3D_ForceRBWake_m0ACF99E46B69B53A409F589DDAB2DDD3E6F57BAD (void);
+extern void NetworkRigidbody3D_IsRigidbodyBelowSleepingThresholds_mC171A0CACAEBAF33A75790FF697A34FCA137F5B4 (void);
+extern void NetworkRigidbody3D_IsStateBelowSleepingThresholds_m910DA79AE5EB229A5FB010BADD5A7B6415B61C29 (void);
+extern void NetworkRigidbody3D__ctor_m2D63617610A8B7E9570A6D26B5E96AA1C30C012D (void);
+extern void NetworkRigidbodyBase_get_Data_m9E4AE52164682AFEB43E7C2B8B6CCC5AB47074F0 (void);
+extern void NetworkRigidbodyBase_get__showSleepOptions_mA352C95C2FFD83BCAED98E23F250F30F91E2753E (void);
+extern void NetworkRigidbodyBase_get_AutoSimulateIsEnabled_mA6A8E7CFE54BE3D8112941B5BF0C140CEB2F8E85 (void);
+extern void NetworkRigidbodyBase_set_AutoSimulateIsEnabled_m0772282FBD74AD699B7A98A6A6014EC3D8CE7473 (void);
+extern void NetworkRigidbodyBase_get_InterpolationTarget_mD094D30805282A47EBE7F7C2CD3A4CC7A35DBA20 (void);
+extern void NetworkRigidbodyBase_set_InterpolationTarget_m795975790727A9030EB7ACDDCB98CD114779052C (void);
+extern void NetworkRigidbodyBase_SetInterpolationTarget_mAA7E5AAB4C6F070F24495DA5356A4C9462A10481 (void);
+extern void NetworkRigidbodyBase_OnValidate_mCBE21660AAB85708D1F9344CA582E26C7262E602 (void);
+extern void NetworkRigidbodyBase_Spawned_m057193EE6172A5385BAA27CC178CBCDA478DFAED (void);
+extern void NetworkRigidbodyBase__ctor_m6C34B3327D3CFF005242C0679827296C79BC8EE1 (void);
+extern void NetworkRigidbodyBase_CopyBackingFieldsToState_m370575A7E8C6FC8F0CFBEBFF95787F0F318FBE84 (void);
+extern void NetworkRigidbodyBase_CopyStateToBackingFields_m03A3443AE1772C5CC41AB8EDEEBD16ECE75B5B2B (void);
+extern void NetworkRBData_get_Flags_m2D22BA73B543E11D7546CA1FA51892EB0D85DF77 (void);
+extern void NetworkRBData_set_Flags_m44060FF3A444C96C2C5CDD3F548DAF328F5D5A02 (void);
+extern void NetworkRBData_get_LinearVelocity2D_m9C9EEDDC662258FAE699B9332B9138E8D09A139E (void);
+extern void NetworkRBData_set_LinearVelocity2D_m7024E0BA863B3F07034DDD733C539150A44BA0C4 (void);
+extern void NetworkRBData_get_AngularVelocity2D_m54E5F6936E3524581E55471CEC6B9DC517C29B84 (void);
+extern void NetworkRBData_set_AngularVelocity2D_m31BBF1B9E6025D86511765E23125F5EAF30A3C12 (void);
+extern void NetworkRBData_get_GravityScale2D_m276CB8307188DAB4D0440016786954195F397A80 (void);
+extern void NetworkRBData_set_GravityScale2D_m1C0AA267110F4717517255F9C1D5CD1E23156444 (void);
+extern void TRSThresholds_get_Default_mFFB1F76F59420B60B2FA8555A4C99249E386DECF (void);
+extern void RunnerSimulatePhysics2D_OverrideAutoSimulate_mC9345744F680F41D767DB2122079750966E73256 (void);
+extern void RunnerSimulatePhysics2D_RestoreAutoSimulate_m05312B32CA5EF3C2DBDF2687D4CC3E66757CDA1C (void);
+extern void RunnerSimulatePhysics2D_get_AutoSyncTransforms_m9270B009F944BD399025871854D01927471A2BAC (void);
+extern void RunnerSimulatePhysics2D_set_AutoSyncTransforms_m594941A4E60451ACA57545853AFEE4440D2FD254 (void);
+extern void RunnerSimulatePhysics2D_get_UnityPhysicsMode_mDE6DCD847F1E36D91FA51D8C3DEA88B27EA6A252 (void);
+extern void RunnerSimulatePhysics2D_SimulatePrimaryScene_mBF538FF637A86A76E546948D0F9120076B165BFD (void);
+extern void RunnerSimulatePhysics2D_SimulateAdditionalScenes_m0DE37D16F6A69A113825188F3BE5BEFA2F811E1E (void);
+extern void RunnerSimulatePhysics2D__ctor_m3DCFA3E9066200139AF8A0415BC7213FC19BAAB1 (void);
+extern void RunnerSimulatePhysics3D_get_UnityPhysicsMode_mFB932BAF94D128F3A021B1ADEC3C468FF7733FE5 (void);
+extern void RunnerSimulatePhysics3D_OverrideAutoSimulate_m32BF0F5474EF47A0554E6D6E9972D5AC9CA958F1 (void);
+extern void RunnerSimulatePhysics3D_RestoreAutoSimulate_m337AB5D54C4967E74DBC5CBB3300D0A3C0D15544 (void);
+extern void RunnerSimulatePhysics3D_get_AutoSyncTransforms_mBDE6004A8866FAF5FE5E6106F1442A64794B72A4 (void);
+extern void RunnerSimulatePhysics3D_set_AutoSyncTransforms_m3BCD73E61F46FD68101C69396DDC4ADC55329E39 (void);
+extern void RunnerSimulatePhysics3D_SimulatePrimaryScene_m8AE71D4FD10F07552AAA8DE4A506F4F9810C6163 (void);
+extern void RunnerSimulatePhysics3D_SimulateAdditionalScenes_m46F71B23783C30507D96B68650C6E690C80B3477 (void);
+extern void RunnerSimulatePhysics3D__ctor_m54E10C1CA56174E8C7039D8F6DB75F75D4032A14 (void);
+extern void RunnerSimulatePhysicsBase_get_ShowClientPhysicsSimulation_mF55AD8F46B512DE55CB920EC7E7504B3D745A744 (void);
+extern void RunnerSimulatePhysicsBase_get_ShowMultiplier_m9E691EADF0E3B7538358897781B37B13BD06412F (void);
+extern void RunnerSimulatePhysicsBase_get_WarnAutoSyncTransforms_m3326FCA766F74B4D8BC658DFD76EFC01E818B6EC (void);
+extern void RunnerSimulatePhysicsBase_get_PhysicsAuthority_mC6B72A3203CDF72DC9455AECA3BF6E0442EFC13D (void);
+extern void RunnerSimulatePhysicsBase_get_PhysicsTiming_mF5D14784C2066BAF4C11DDDC2976F434CC6DB3CA (void);
+extern void RunnerSimulatePhysicsBase_get_PhysicsSimulationDeltaTime_m1466FFCB360C0FE9D3AE1237F71A7FE441D72E7D (void);
+extern void RunnerSimulatePhysicsBase_add_OnBeforeSimulate_mB3D1778A3D712F463DFDA6B135B103B008BD8881 (void);
+extern void RunnerSimulatePhysicsBase_remove_OnBeforeSimulate_mF70337C1DCB8ED54E72EC3D590D670DC2EE89D41 (void);
+extern void RunnerSimulatePhysicsBase_add_OnAfterSimulate_mA6B072E600DA545BC93A7FF757A50AD07849DBAC (void);
+extern void RunnerSimulatePhysicsBase_remove_OnAfterSimulate_m425165BD33F6249CB292318334973ADE0F919E9B (void);
+extern void RunnerSimulatePhysicsBase_get_HasSimulatedThisTick_m6A8B406ADD5FA93514BD4A38F81D6FD8E8B28B66 (void);
+extern void RunnerSimulatePhysicsBase_set_HasSimulatedThisTick_mC89991887D327545002AEDFC484901E2D880ED48 (void);
+extern void RunnerSimulatePhysicsBase_QueueBeforeSimulationCallback_m8BA0F5F187CF9592B757662B6D85EA7BB1FAA8B3 (void);
+extern void RunnerSimulatePhysicsBase_QueueAfterSimulationCallback_mCAB2A9D35385AD4F83265BA1509E0DBFB6FF3805 (void);
+extern void RunnerSimulatePhysicsBase_Startup_mA4F46B8A12287770AA8BCA12F589117C9585F91E (void);
+extern void RunnerSimulatePhysicsBase_Shutdown_mF03612C14B62572CBE2E4EA3E84A96C52DE5F8A4 (void);
+extern void RunnerSimulatePhysicsBase_Update_mD9C54129E97E600AF8C06C8CB5C26A8158FBC67F (void);
+extern void RunnerSimulatePhysicsBase_OnDestroy_mC78E5CDEBDA29C72A0AA8D7C1CCDF9B722F601D2 (void);
+extern void RunnerSimulatePhysicsBase_FixedUpdate_m025DBE32BD23AED63AA14DC93DA4AA64E9A5FAEE (void);
+extern void RunnerSimulatePhysicsBase_FixedUpdateNetwork_m00283CB2413A31EF48EA20642F98F3C513B0BEF1 (void);
+extern void RunnerSimulatePhysicsBase_SimulationExecute_m2C23C8A964B81B04E15CAFF12D4E54DBE99D7026 (void);
+extern void RunnerSimulatePhysicsBase_Fusion_IBeforeTick_BeforeTick_m511C20291C28AD3CBA136C07D60D9D668100F4E3 (void);
+extern void RunnerSimulatePhysicsBase_CanSimulatePhysics_m6F1C9F7D06A749A8CB26634D2D35899E69280052 (void);
+extern void RunnerSimulatePhysicsBase_RequiresSyncTransform_m5CF4DB0EC75631C26266FBAC7A30A1EA8329385A (void);
+extern void RunnerSimulatePhysicsBase_DoSimulatePrimaryScene_m6C696CE09C01DAC323724A7F284154D17CEE79AE (void);
+extern void RunnerSimulatePhysicsBase_AnySceneRequiresSyncTransform_m933DFAB814EDA55644B74ABC04A395D6092FC94A (void);
+extern void RunnerSimulatePhysicsBase__ctor_mDEFE0C8E4937A7479310998BF96BC40BD916B71E (void);
+static Il2CppMethodPointer s_methodPointers[164] = 
+{
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m3E790B31714A86B71E9D77FE305AD213AD3AA7B8,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m03DBFF42BFA68A90C2887A4C41779E936108A53E,
+	NetworkRigidbody2D_get_RBPosition_mE5239121C6E5FC96485231E203B6A7A50B6ADBA6,
+	NetworkRigidbody2D_set_RBPosition_m43BB2EAAC63BD60A682870854FE9662F2AD00C83,
+	NetworkRigidbody2D_get_RBRotation_m7E8AA84FCDE4E695FE1D40A75DD8E9E7DE1802DD,
+	NetworkRigidbody2D_set_RBRotation_m12314847F9E74F32912CA2C7BA23E776770FEA91,
+	NetworkRigidbody2D_get_RBIsKinematic_m14205B4FF5F4E4BB60FC889EF2D18D30B5B59960,
+	NetworkRigidbody2D_set_RBIsKinematic_mD17B0D3D5BC3CC5D9E9508C8773C44DBDF9C817C,
+	NetworkRigidbody2D_Awake_m0F682D01116C551E4D4A75E4F11B90BD56C218B0,
+	NetworkRigidbody2D_GetRBIsKinematic_m014745E3E023D6841A774EBDF26E0944323AE781,
+	NetworkRigidbody2D_SetRBIsKinematic_m39C6DAE72CDFC70A872A8E0CA0E9FC19C6BFD2AF,
+	NetworkRigidbody2D_CaptureRBPositionRotation_m5E284EFC117AC5FB2397E5F2E119A7A404BCE4A5,
+	NetworkRigidbody2D_ApplyRBPositionRotation_m79AE960A304AC7295C47D0E04C15B4980B0D91E4,
+	NetworkRigidbody2D_GetRBFlags_m71A76443D8D8C5BBED6CF78F0CB753B586CB9002,
+	NetworkRigidbody2D_GetRBConstraints_mA76E0D58A571D02C7744C79C4B6F7335CA57F72F,
+	NetworkRigidbody2D_SetRBConstraints_m69429122193C6441588F5F16D1AB696BE663F51D,
+	NetworkRigidbody2D_CaptureExtras_m14E9DC7FD2BA89B8B9F031D7D841B254C0E0F726,
+	NetworkRigidbody2D_ApplyExtras_m73D5D2EA3FD65264D6CDD9EE795DA6102D4A2F36,
+	NetworkRigidbody2D_ResetRigidbody_mE5B9A5C79D1D40BB056F8A009FCABFA68250D994,
+	NetworkRigidbody2D_IsRBSleeping_m8FF714A17CCBDC19620D31DFE09DD1AF6057183D,
+	NetworkRigidbody2D_ForceRBSleep_mAE809FB9F125AC68977B7073D5BDE5D7A2F381AC,
+	NetworkRigidbody2D_ForceRBWake_m2C315B4BD93C995C3959AE90D0CD319C9F7711E7,
+	NetworkRigidbody2D_IsRigidbodyBelowSleepingThresholds_m8A1F498E19A49A6C1B940A5BDD07FB010178270A,
+	NetworkRigidbody2D_IsStateBelowSleepingThresholds_m8DE87E8520D21FE254D5B9239B7FA96A21AF63E0,
+	NetworkRigidbody2D__ctor_mC9D8F9409D2BC2AB737FE9D4D6BAB07D844C2EDE,
+	NetworkRigidbody3D_get_RBPosition_m523E70834D2B40B0DA1F0483AF03510604055205,
+	NetworkRigidbody3D_set_RBPosition_mD3D47FAE3BC583ECEB52C9FA66CD07B08D7008A6,
+	NetworkRigidbody3D_get_RBRotation_m84234D31C719632D63783E11B0439FFCE886852B,
+	NetworkRigidbody3D_set_RBRotation_mD75576FDCEA59BBC22D11D6B56877B7F19AC09B4,
+	NetworkRigidbody3D_get_RBIsKinematic_m250617B9250CF3D37CB31B15800B7FACD4B6FE69,
+	NetworkRigidbody3D_set_RBIsKinematic_m8087A7ED7450382270B8B6C41DD2E9D62F665E9B,
+	NetworkRigidbody3D_Awake_m9D96D7366931F7183F2540B8311ABC038FD21513,
+	NetworkRigidbody3D_GetRBIsKinematic_mD13117615494BD80966BAD5534B6F022001F5020,
+	NetworkRigidbody3D_SetRBIsKinematic_mFDF9F62F6A161EDCCB9273F311D457DBB06431B2,
+	NetworkRigidbody3D_CaptureRBPositionRotation_m1B0A163B896108C3D109E01CA956D4F1FC1BB224,
+	NetworkRigidbody3D_ApplyRBPositionRotation_mA573456D26F7642FECE48E1B325994084F1F4521,
+	NetworkRigidbody3D_GetRBFlags_m739FCC3E4253DDBF95FA2F5EB7F0897E0768183F,
+	NetworkRigidbody3D_GetRBConstraints_mB07F5A95E2F3203FABA6D83B618E9E88128A5899,
+	NetworkRigidbody3D_SetRBConstraints_mB2356B5430B67FA285D6CD803E4F86895487D68F,
+	NetworkRigidbody3D_CaptureExtras_m03C85AE8A222BC9C353129D5A3809A58A3EE0FD0,
+	NetworkRigidbody3D_ApplyExtras_mB1FA7BA483FA826F2923F87DF98B574E405157AB,
+	NetworkRigidbody3D_ResetRigidbody_m3D300A6C0AA93F4DE6A46B89BEE61F18EE3E6BDD,
+	NetworkRigidbody3D_IsRBSleeping_m64531CC1C04CE622B21F54FDFE67582DAC3F2904,
+	NetworkRigidbody3D_ForceRBSleep_mD996E5A4F2CEEAFC86434D1C656FF22C99B505E7,
+	NetworkRigidbody3D_ForceRBWake_m0ACF99E46B69B53A409F589DDAB2DDD3E6F57BAD,
+	NetworkRigidbody3D_IsRigidbodyBelowSleepingThresholds_mC171A0CACAEBAF33A75790FF697A34FCA137F5B4,
+	NetworkRigidbody3D_IsStateBelowSleepingThresholds_m910DA79AE5EB229A5FB010BADD5A7B6415B61C29,
+	NetworkRigidbody3D__ctor_m2D63617610A8B7E9570A6D26B5E96AA1C30C012D,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NetworkRigidbodyBase_get_Data_m9E4AE52164682AFEB43E7C2B8B6CCC5AB47074F0,
+	NetworkRigidbodyBase_get__showSleepOptions_mA352C95C2FFD83BCAED98E23F250F30F91E2753E,
+	NetworkRigidbodyBase_get_AutoSimulateIsEnabled_mA6A8E7CFE54BE3D8112941B5BF0C140CEB2F8E85,
+	NetworkRigidbodyBase_set_AutoSimulateIsEnabled_m0772282FBD74AD699B7A98A6A6014EC3D8CE7473,
+	NetworkRigidbodyBase_get_InterpolationTarget_mD094D30805282A47EBE7F7C2CD3A4CC7A35DBA20,
+	NetworkRigidbodyBase_set_InterpolationTarget_m795975790727A9030EB7ACDDCB98CD114779052C,
+	NetworkRigidbodyBase_SetInterpolationTarget_mAA7E5AAB4C6F070F24495DA5356A4C9462A10481,
+	NetworkRigidbodyBase_OnValidate_mCBE21660AAB85708D1F9344CA582E26C7262E602,
+	NetworkRigidbodyBase_Spawned_m057193EE6172A5385BAA27CC178CBCDA478DFAED,
+	NULL,
+	NetworkRigidbodyBase__ctor_m6C34B3327D3CFF005242C0679827296C79BC8EE1,
+	NetworkRigidbodyBase_CopyBackingFieldsToState_m370575A7E8C6FC8F0CFBEBFF95787F0F318FBE84,
+	NetworkRigidbodyBase_CopyStateToBackingFields_m03A3443AE1772C5CC41AB8EDEEBD16ECE75B5B2B,
+	NetworkRBData_get_Flags_m2D22BA73B543E11D7546CA1FA51892EB0D85DF77,
+	NetworkRBData_set_Flags_m44060FF3A444C96C2C5CDD3F548DAF328F5D5A02,
+	NetworkRBData_get_LinearVelocity2D_m9C9EEDDC662258FAE699B9332B9138E8D09A139E,
+	NetworkRBData_set_LinearVelocity2D_m7024E0BA863B3F07034DDD733C539150A44BA0C4,
+	NetworkRBData_get_AngularVelocity2D_m54E5F6936E3524581E55471CEC6B9DC517C29B84,
+	NetworkRBData_set_AngularVelocity2D_m31BBF1B9E6025D86511765E23125F5EAF30A3C12,
+	NetworkRBData_get_GravityScale2D_m276CB8307188DAB4D0440016786954195F397A80,
+	NetworkRBData_set_GravityScale2D_m1C0AA267110F4717517255F9C1D5CD1E23156444,
+	TRSThresholds_get_Default_mFFB1F76F59420B60B2FA8555A4C99249E386DECF,
+	RunnerSimulatePhysics2D_OverrideAutoSimulate_mC9345744F680F41D767DB2122079750966E73256,
+	RunnerSimulatePhysics2D_RestoreAutoSimulate_m05312B32CA5EF3C2DBDF2687D4CC3E66757CDA1C,
+	RunnerSimulatePhysics2D_get_AutoSyncTransforms_m9270B009F944BD399025871854D01927471A2BAC,
+	RunnerSimulatePhysics2D_set_AutoSyncTransforms_m594941A4E60451ACA57545853AFEE4440D2FD254,
+	RunnerSimulatePhysics2D_get_UnityPhysicsMode_mDE6DCD847F1E36D91FA51D8C3DEA88B27EA6A252,
+	RunnerSimulatePhysics2D_SimulatePrimaryScene_mBF538FF637A86A76E546948D0F9120076B165BFD,
+	RunnerSimulatePhysics2D_SimulateAdditionalScenes_m0DE37D16F6A69A113825188F3BE5BEFA2F811E1E,
+	RunnerSimulatePhysics2D__ctor_m3DCFA3E9066200139AF8A0415BC7213FC19BAAB1,
+	RunnerSimulatePhysics3D_get_UnityPhysicsMode_mFB932BAF94D128F3A021B1ADEC3C468FF7733FE5,
+	RunnerSimulatePhysics3D_OverrideAutoSimulate_m32BF0F5474EF47A0554E6D6E9972D5AC9CA958F1,
+	RunnerSimulatePhysics3D_RestoreAutoSimulate_m337AB5D54C4967E74DBC5CBB3300D0A3C0D15544,
+	RunnerSimulatePhysics3D_get_AutoSyncTransforms_mBDE6004A8866FAF5FE5E6106F1442A64794B72A4,
+	RunnerSimulatePhysics3D_set_AutoSyncTransforms_m3BCD73E61F46FD68101C69396DDC4ADC55329E39,
+	RunnerSimulatePhysics3D_SimulatePrimaryScene_m8AE71D4FD10F07552AAA8DE4A506F4F9810C6163,
+	RunnerSimulatePhysics3D_SimulateAdditionalScenes_m46F71B23783C30507D96B68650C6E690C80B3477,
+	RunnerSimulatePhysics3D__ctor_m54E10C1CA56174E8C7039D8F6DB75F75D4032A14,
+	RunnerSimulatePhysicsBase_get_ShowClientPhysicsSimulation_mF55AD8F46B512DE55CB920EC7E7504B3D745A744,
+	RunnerSimulatePhysicsBase_get_ShowMultiplier_m9E691EADF0E3B7538358897781B37B13BD06412F,
+	RunnerSimulatePhysicsBase_get_WarnAutoSyncTransforms_m3326FCA766F74B4D8BC658DFD76EFC01E818B6EC,
+	RunnerSimulatePhysicsBase_get_PhysicsAuthority_mC6B72A3203CDF72DC9455AECA3BF6E0442EFC13D,
+	RunnerSimulatePhysicsBase_get_PhysicsTiming_mF5D14784C2066BAF4C11DDDC2976F434CC6DB3CA,
+	RunnerSimulatePhysicsBase_get_PhysicsSimulationDeltaTime_m1466FFCB360C0FE9D3AE1237F71A7FE441D72E7D,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	RunnerSimulatePhysicsBase_add_OnBeforeSimulate_mB3D1778A3D712F463DFDA6B135B103B008BD8881,
+	RunnerSimulatePhysicsBase_remove_OnBeforeSimulate_mF70337C1DCB8ED54E72EC3D590D670DC2EE89D41,
+	RunnerSimulatePhysicsBase_add_OnAfterSimulate_mA6B072E600DA545BC93A7FF757A50AD07849DBAC,
+	RunnerSimulatePhysicsBase_remove_OnAfterSimulate_m425165BD33F6249CB292318334973ADE0F919E9B,
+	RunnerSimulatePhysicsBase_get_HasSimulatedThisTick_m6A8B406ADD5FA93514BD4A38F81D6FD8E8B28B66,
+	RunnerSimulatePhysicsBase_set_HasSimulatedThisTick_mC89991887D327545002AEDFC484901E2D880ED48,
+	RunnerSimulatePhysicsBase_QueueBeforeSimulationCallback_m8BA0F5F187CF9592B757662B6D85EA7BB1FAA8B3,
+	RunnerSimulatePhysicsBase_QueueAfterSimulationCallback_mCAB2A9D35385AD4F83265BA1509E0DBFB6FF3805,
+	NULL,
+	NULL,
+	RunnerSimulatePhysicsBase_Startup_mA4F46B8A12287770AA8BCA12F589117C9585F91E,
+	RunnerSimulatePhysicsBase_Shutdown_mF03612C14B62572CBE2E4EA3E84A96C52DE5F8A4,
+	RunnerSimulatePhysicsBase_Update_mD9C54129E97E600AF8C06C8CB5C26A8158FBC67F,
+	RunnerSimulatePhysicsBase_OnDestroy_mC78E5CDEBDA29C72A0AA8D7C1CCDF9B722F601D2,
+	RunnerSimulatePhysicsBase_FixedUpdate_m025DBE32BD23AED63AA14DC93DA4AA64E9A5FAEE,
+	RunnerSimulatePhysicsBase_FixedUpdateNetwork_m00283CB2413A31EF48EA20642F98F3C513B0BEF1,
+	RunnerSimulatePhysicsBase_SimulationExecute_m2C23C8A964B81B04E15CAFF12D4E54DBE99D7026,
+	RunnerSimulatePhysicsBase_Fusion_IBeforeTick_BeforeTick_m511C20291C28AD3CBA136C07D60D9D668100F4E3,
+	RunnerSimulatePhysicsBase_CanSimulatePhysics_m6F1C9F7D06A749A8CB26634D2D35899E69280052,
+	RunnerSimulatePhysicsBase_RequiresSyncTransform_m5CF4DB0EC75631C26266FBAC7A30A1EA8329385A,
+	RunnerSimulatePhysicsBase_DoSimulatePrimaryScene_m6C696CE09C01DAC323724A7F284154D17CEE79AE,
+	RunnerSimulatePhysicsBase_AnySceneRequiresSyncTransform_m933DFAB814EDA55644B74ABC04A395D6092FC94A,
+	RunnerSimulatePhysicsBase__ctor_mDEFE0C8E4937A7479310998BF96BC40BD916B71E,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};
+extern void NetworkRBData_get_Flags_m2D22BA73B543E11D7546CA1FA51892EB0D85DF77_AdjustorThunk (void);
+extern void NetworkRBData_set_Flags_m44060FF3A444C96C2C5CDD3F548DAF328F5D5A02_AdjustorThunk (void);
+extern void NetworkRBData_get_LinearVelocity2D_m9C9EEDDC662258FAE699B9332B9138E8D09A139E_AdjustorThunk (void);
+extern void NetworkRBData_set_LinearVelocity2D_m7024E0BA863B3F07034DDD733C539150A44BA0C4_AdjustorThunk (void);
+extern void NetworkRBData_get_AngularVelocity2D_m54E5F6936E3524581E55471CEC6B9DC517C29B84_AdjustorThunk (void);
+extern void NetworkRBData_set_AngularVelocity2D_m31BBF1B9E6025D86511765E23125F5EAF30A3C12_AdjustorThunk (void);
+extern void NetworkRBData_get_GravityScale2D_m276CB8307188DAB4D0440016786954195F397A80_AdjustorThunk (void);
+extern void NetworkRBData_set_GravityScale2D_m1C0AA267110F4717517255F9C1D5CD1E23156444_AdjustorThunk (void);
+static Il2CppTokenAdjustorThunkPair s_adjustorThunks[8] = 
+{
+	{ 0x06000066, NetworkRBData_get_Flags_m2D22BA73B543E11D7546CA1FA51892EB0D85DF77_AdjustorThunk },
+	{ 0x06000067, NetworkRBData_set_Flags_m44060FF3A444C96C2C5CDD3F548DAF328F5D5A02_AdjustorThunk },
+	{ 0x06000068, NetworkRBData_get_LinearVelocity2D_m9C9EEDDC662258FAE699B9332B9138E8D09A139E_AdjustorThunk },
+	{ 0x06000069, NetworkRBData_set_LinearVelocity2D_m7024E0BA863B3F07034DDD733C539150A44BA0C4_AdjustorThunk },
+	{ 0x0600006A, NetworkRBData_get_AngularVelocity2D_m54E5F6936E3524581E55471CEC6B9DC517C29B84_AdjustorThunk },
+	{ 0x0600006B, NetworkRBData_set_AngularVelocity2D_m31BBF1B9E6025D86511765E23125F5EAF30A3C12_AdjustorThunk },
+	{ 0x0600006C, NetworkRBData_get_GravityScale2D_m276CB8307188DAB4D0440016786954195F397A80_AdjustorThunk },
+	{ 0x0600006D, NetworkRBData_set_GravityScale2D_m1C0AA267110F4717517255F9C1D5CD1E23156444_AdjustorThunk },
+};
+static const int32_t s_InvokerIndices[164] = 
+{
+	14581,
+	8418,
+	8408,
+	6824,
+	8297,
+	6716,
+	8149,
+	6573,
+	8418,
+	4836,
+	3636,
+	3634,
+	1930,
+	4836,
+	5654,
+	3644,
+	3634,
+	3634,
+	8418,
+	4836,
+	6696,
+	6696,
+	4836,
+	4830,
+	8418,
+	8408,
+	6824,
+	8297,
+	6716,
+	8149,
+	6573,
+	8418,
+	4836,
+	3636,
+	3634,
+	1930,
+	4836,
+	5654,
+	3644,
+	3634,
+	3634,
+	8418,
+	4836,
+	6696,
+	6696,
+	4836,
+	4830,
+	8418,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	0,
+	8132,
+	8149,
+	8149,
+	6573,
+	8279,
+	6696,
+	6696,
+	8418,
+	8418,
+	0,
+	8418,
+	6573,
+	8418,
+	8122,
+	6541,
+	8406,
+	6822,
+	8346,
+	6761,
+	8346,
+	6761,
+	14545,
+	6573,
+	8418,
+	8149,
+	6573,
+	8217,
+	6761,
+	3726,
+	8418,
+	8217,
+	6573,
+	8418,
+	8149,
+	6573,
+	6761,
+	3726,
+	8418,
+	8149,
+	8149,
+	8149,
+	8217,
+	8217,
+	8346,
+	0,
+	0,
+	0,
+	0,
+	0,
+	6696,
+	6696,
+	6696,
+	6696,
+	8149,
+	6573,
+	6696,
+	6696,
+	0,
+	0,
+	8418,
+	8418,
+	8418,
+	8418,
+	8418,
+	8418,
+	3726,
+	8418,
+	4775,
+	4775,
+	6761,
+	8149,
+	8418,
+	0,
+	0,
+	0,
+	0,
+};
+static const Il2CppTokenRangePair s_rgctxIndices[2] = 
+{
+	{ 0x02000006, { 0, 31 } },
+	{ 0x0200000E, { 31, 17 } },
+};
+extern const uint32_t g_rgctx_NetworkRigidbody_2_tB81F8FF8CE3240BD314E98C9EB8D3C9D73910DC8;
+extern const uint32_t g_rgctx_RBType_tC60D589F3D297A2767318594DDB0451FC09CBC7C;
+extern const uint32_t g_rgctx_Component_TryGetComponent_TisRBType_tC60D589F3D297A2767318594DDB0451FC09CBC7C_m4A401A54726165B3F41D140E3D6CEC4042B50C51;
+extern const uint32_t g_rgctx_RBTypeU26_tEA4A614B4CE16776C183D2031B2FDE2258682417;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_SetRBIsKinematic_mDEC539BF48E44DF461F259C8E5CE3E3A81F2E89A;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_EnsureHasRunnerSimulatePhysics_mC01FC1F750CD933FEE030ED296C1D73385F2DD4A;
+extern const uint32_t g_rgctx_PhysicsSimType_t3CD6DE133AFFCE32674BB6E49ECAC9D72C601DB4;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_CopyToBuffer_m78244875C2CFB303996CF7FC24DD85865EEE1C19;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_CopyToEngine_m54CC7C6A226165AA7179C40600FB3C436D5D331D;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_ResetRigidbody_mA530BA2173CD09394EF2ADF90663477C4BBEB8AA;
+extern const uint32_t g_rgctx_Component_TryGetComponent_TisPhysicsSimType_t3CD6DE133AFFCE32674BB6E49ECAC9D72C601DB4_mD0AFF9D06A8BCC2F962C6F3FDE299C80D3D5ABE9;
+extern const uint32_t g_rgctx_PhysicsSimTypeU26_tC4B7CB1CA79174BA3745474563A0056C39020CF1;
+extern const uint32_t g_rgctx_RBType_tC60D589F3D297A2767318594DDB0451FC09CBC7C;
+extern const uint32_t g_rgctx_PhysicsSimType_t3CD6DE133AFFCE32674BB6E49ECAC9D72C601DB4;
+extern const uint32_t g_rgctx_GameObject_AddComponent_TisPhysicsSimType_t3CD6DE133AFFCE32674BB6E49ECAC9D72C601DB4_mE79568145800FFDAA764F660BA68CC0F3229EA6C;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_GetRBFlags_m03F16881F6DFA3D1B71AE460415155EC033006FD;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_CaptureRBPositionRotation_mE6DACBC889F75F004FFBDBA7A8C33C7002309ED0;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_CaptureExtras_m4ECC9C421E0626AEC181E2857311AE926EBF3F2E;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_GetRBConstraints_m5605BF45C8EB5CCCA379B304AA118F089B8849AF;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_OnParentNotFound_m42B53B0388DB0E6FF97E2E24830238200C3A6BF6;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_IsRBSleeping_m3209EB1879821CED7329BBB75CC426E0814A0C59;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_ApplyRBPositionRotation_m3EA869999AC1BFA3229B5E4AE7EFCE2ED3E7716C;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_GetRBIsKinematic_mBE33D7E1E55978D37AD07C475EC737BDAD92252B;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_ApplyExtras_m4611C4761835BA0A780581F646CA92FF6D19CB73;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_SetRBConstraints_mCC589F028160067AE1C94FBED80344C5B95C20F7;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_ForceRBWake_mF165191C5B8D29385450EB997A4B315A0BD41D7F;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_IsRigidbodyBelowSleepingThresholds_m44AE07DAA5674EBD6B4CD5E4116084D22FB3C4DF;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_ForceRBSleep_m0D39FC3C8916944F4B4FFC308952FF638C83EBFE;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_IsStateBelowSleepingThresholds_m24002CDDF096F1F13ECC290A21345EC3B3E9F096;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_ApplyDeferredTeleport_m7AD47F8E11D670CC6D3BE84EF0561D3B971551B9;
+extern const uint32_t g_rgctx_NetworkRigidbody_2_IncrementTeleportKey_mF5BAB205B8225DE9E95A972D1E5D92BB1980D2F7;
+extern const uint32_t g_rgctx_RunnerSimulatePhysicsBase_1_t4FB10E5FB41BF51EC869425F99C7CE6709B0F7AE;
+extern const uint32_t g_rgctx_List_1_tC94F654A5B390F6BB9C7559DB763090F1E412FC7;
+extern const uint32_t g_rgctx_List_1__ctor_mFA9B3BB9E12BC53F7935A386521988E75204C048;
+extern const uint32_t g_rgctx_List_1_GetEnumerator_m1E6A749E81F62238DB8588C74E5B9B3F8CA312C5;
+extern const uint32_t g_rgctx_Enumerator_t6684B13696A7B075DDC8C3A3910FA9CDF1F0A6B0;
+extern const uint32_t g_rgctx_Enumerator_get_Current_m4061B9BEC3661E75248FC85C1249702B1657F991;
+extern const uint32_t g_rgctx_Enumerator_t6684B13696A7B075DDC8C3A3910FA9CDF1F0A6B0;
+extern const uint32_t g_rgctx_AdditionalScene_t2B24B6F01469C9DBBC016A80FD80060D4AD01942;
+extern const uint32_t g_rgctx_TPhysicsScene_tD13122E7E9453AE44109D1172BEA6B92B254B873;
+extern const uint32_t g_rgctx_IEquatable_1_t04E703F1235244FF523675303631C4AEBE8DA78C;
+extern const Il2CppRGCTXConstrainedData g_rgctx_TPhysicsScene_tD13122E7E9453AE44109D1172BEA6B92B254B873_IEquatable_1_Equals_m948D23FA8DD4EDC985FE7674D5D174B689101740;
+extern const uint32_t g_rgctx_Enumerator_MoveNext_m530931BD56820F5B177704E09968E553201815DE;
+extern const Il2CppRGCTXConstrainedData g_rgctx_Enumerator_t6684B13696A7B075DDC8C3A3910FA9CDF1F0A6B0_IDisposable_Dispose_m3C902735BE731EE30AC1185E7AEF6ACE7A9D9CC7;
+extern const uint32_t g_rgctx_List_1_Add_mA2FF3FFB70F7243794AB8D9154061BE3F6ED8DDC;
+extern const uint32_t g_rgctx_List_1_get_Item_m157A69E57D91E01219EF8800EA41EE267C560CAA;
+extern const uint32_t g_rgctx_List_1_get_Count_m7F9ED78128401F79E894C8EA463DF2046FA5EB3E;
+extern const uint32_t g_rgctx_List_1_RemoveAt_m9B2CAF3EE2AE4CBEC655CC06EA6A97EDF4D480D6;
+static const Il2CppRGCTXDefinition s_rgctxValues[48] = 
+{
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_NetworkRigidbody_2_tB81F8FF8CE3240BD314E98C9EB8D3C9D73910DC8 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_RBType_tC60D589F3D297A2767318594DDB0451FC09CBC7C },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Component_TryGetComponent_TisRBType_tC60D589F3D297A2767318594DDB0451FC09CBC7C_m4A401A54726165B3F41D140E3D6CEC4042B50C51 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_RBTypeU26_tEA4A614B4CE16776C183D2031B2FDE2258682417 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_SetRBIsKinematic_mDEC539BF48E44DF461F259C8E5CE3E3A81F2E89A },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_EnsureHasRunnerSimulatePhysics_mC01FC1F750CD933FEE030ED296C1D73385F2DD4A },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_PhysicsSimType_t3CD6DE133AFFCE32674BB6E49ECAC9D72C601DB4 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_CopyToBuffer_m78244875C2CFB303996CF7FC24DD85865EEE1C19 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_CopyToEngine_m54CC7C6A226165AA7179C40600FB3C436D5D331D },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_ResetRigidbody_mA530BA2173CD09394EF2ADF90663477C4BBEB8AA },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Component_TryGetComponent_TisPhysicsSimType_t3CD6DE133AFFCE32674BB6E49ECAC9D72C601DB4_mD0AFF9D06A8BCC2F962C6F3FDE299C80D3D5ABE9 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_PhysicsSimTypeU26_tC4B7CB1CA79174BA3745474563A0056C39020CF1 },
+	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_RBType_tC60D589F3D297A2767318594DDB0451FC09CBC7C },
+	{ (Il2CppRGCTXDataType)1, (const void *)&g_rgctx_PhysicsSimType_t3CD6DE133AFFCE32674BB6E49ECAC9D72C601DB4 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_GameObject_AddComponent_TisPhysicsSimType_t3CD6DE133AFFCE32674BB6E49ECAC9D72C601DB4_mE79568145800FFDAA764F660BA68CC0F3229EA6C },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_GetRBFlags_m03F16881F6DFA3D1B71AE460415155EC033006FD },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_CaptureRBPositionRotation_mE6DACBC889F75F004FFBDBA7A8C33C7002309ED0 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_CaptureExtras_m4ECC9C421E0626AEC181E2857311AE926EBF3F2E },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_GetRBConstraints_m5605BF45C8EB5CCCA379B304AA118F089B8849AF },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_OnParentNotFound_m42B53B0388DB0E6FF97E2E24830238200C3A6BF6 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_IsRBSleeping_m3209EB1879821CED7329BBB75CC426E0814A0C59 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_ApplyRBPositionRotation_m3EA869999AC1BFA3229B5E4AE7EFCE2ED3E7716C },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_GetRBIsKinematic_mBE33D7E1E55978D37AD07C475EC737BDAD92252B },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_ApplyExtras_m4611C4761835BA0A780581F646CA92FF6D19CB73 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_SetRBConstraints_mCC589F028160067AE1C94FBED80344C5B95C20F7 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_ForceRBWake_mF165191C5B8D29385450EB997A4B315A0BD41D7F },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_IsRigidbodyBelowSleepingThresholds_m44AE07DAA5674EBD6B4CD5E4116084D22FB3C4DF },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_ForceRBSleep_m0D39FC3C8916944F4B4FFC308952FF638C83EBFE },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_IsStateBelowSleepingThresholds_m24002CDDF096F1F13ECC290A21345EC3B3E9F096 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_ApplyDeferredTeleport_m7AD47F8E11D670CC6D3BE84EF0561D3B971551B9 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_NetworkRigidbody_2_IncrementTeleportKey_mF5BAB205B8225DE9E95A972D1E5D92BB1980D2F7 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_RunnerSimulatePhysicsBase_1_t4FB10E5FB41BF51EC869425F99C7CE6709B0F7AE },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_List_1_tC94F654A5B390F6BB9C7559DB763090F1E412FC7 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1__ctor_mFA9B3BB9E12BC53F7935A386521988E75204C048 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_GetEnumerator_m1E6A749E81F62238DB8588C74E5B9B3F8CA312C5 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Enumerator_t6684B13696A7B075DDC8C3A3910FA9CDF1F0A6B0 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator_get_Current_m4061B9BEC3661E75248FC85C1249702B1657F991 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Enumerator_t6684B13696A7B075DDC8C3A3910FA9CDF1F0A6B0 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_AdditionalScene_t2B24B6F01469C9DBBC016A80FD80060D4AD01942 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_TPhysicsScene_tD13122E7E9453AE44109D1172BEA6B92B254B873 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_IEquatable_1_t04E703F1235244FF523675303631C4AEBE8DA78C },
+	{ (Il2CppRGCTXDataType)5, (const void *)&g_rgctx_TPhysicsScene_tD13122E7E9453AE44109D1172BEA6B92B254B873_IEquatable_1_Equals_m948D23FA8DD4EDC985FE7674D5D174B689101740 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Enumerator_MoveNext_m530931BD56820F5B177704E09968E553201815DE },
+	{ (Il2CppRGCTXDataType)5, (const void *)&g_rgctx_Enumerator_t6684B13696A7B075DDC8C3A3910FA9CDF1F0A6B0_IDisposable_Dispose_m3C902735BE731EE30AC1185E7AEF6ACE7A9D9CC7 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_Add_mA2FF3FFB70F7243794AB8D9154061BE3F6ED8DDC },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_get_Item_m157A69E57D91E01219EF8800EA41EE267C560CAA },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_get_Count_m7F9ED78128401F79E894C8EA463DF2046FA5EB3E },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_List_1_RemoveAt_m9B2CAF3EE2AE4CBEC655CC06EA6A97EDF4D480D6 },
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_Fusion_Addons_Physics_CodeGenModule;
+const Il2CppCodeGenModule g_Fusion_Addons_Physics_CodeGenModule = 
+{
+	"Fusion.Addons.Physics.dll",
+	164,
+	s_methodPointers,
+	8,
+	s_adjustorThunks,
+	s_InvokerIndices,
+	0,
+	NULL,
+	2,
+	s_rgctxIndices,
+	48,
+	s_rgctxValues,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

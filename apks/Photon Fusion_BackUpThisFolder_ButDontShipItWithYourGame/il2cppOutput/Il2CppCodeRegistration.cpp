@@ -21,6 +21,7 @@ IL2CPP_EXTERN_C const Il2CppMethodPointer g_UnresolvedInstanceMethodPointers[];
 IL2CPP_EXTERN_C const Il2CppMethodPointer g_UnresolvedStaticMethodPointers[];
 IL2CPP_EXTERN_C Il2CppInteropData g_Il2CppInteropData[];
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Fusion_Addons_Physics_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Fusion_Common_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Fusion_Log_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Fusion_Realtime_CodeGenModule;
@@ -79,9 +80,10 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Unity_RenderPipelines_Universal_Runt
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g___Generated_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[58] = 
+const Il2CppCodeGenModule* g_CodeGenModules[59] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
+	(&g_Fusion_Addons_Physics_CodeGenModule),
 	(&g_Fusion_Common_CodeGenModule),
 	(&g_Fusion_Log_CodeGenModule),
 	(&g_Fusion_Realtime_CodeGenModule),
@@ -145,20 +147,20 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	19,
 	g_ReversePInvokeWrapperPointers,
-	59925,
+	60462,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	14514,
+	14589,
 	g_Il2CppInvokerPointers,
-	2359,
+	2390,
 	g_UnresolvedVirtualMethodPointers,
 	g_UnresolvedInstanceMethodPointers,
 	g_UnresolvedStaticMethodPointers,
-	575,
+	578,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	58,
+	59,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;
