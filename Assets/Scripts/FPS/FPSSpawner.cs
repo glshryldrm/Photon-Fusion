@@ -130,6 +130,7 @@ public class FPSSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
         input.Set(data);
     }
+
     NetworkRunner _networkRunner;
     [SerializeField] private NetworkPrefabRef _playerPrefab;
     Dictionary<PlayerRef, NetworkObject> _spawnedCharacters = new Dictionary<PlayerRef, NetworkObject>();
@@ -170,8 +171,8 @@ public class FPSSpawner : MonoBehaviour, INetworkRunnerCallbacks
             }
         }
     }
-    // Update is called once per frame
-    void Update()
+
+    private void Update()
     {
         _mouseButton0 = _mouseButton0 || Input.GetMouseButton(0);
         _jump = _jump || Input.GetKey(KeyCode.Space);
