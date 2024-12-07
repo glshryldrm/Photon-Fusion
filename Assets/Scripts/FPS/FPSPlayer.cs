@@ -7,16 +7,27 @@ public class FPSPlayer : NetworkBehaviour
 {
     private NetworkCharacterController _cc;
     private CharacterController _controller;
+    private float horizontalRotation;
 
     public float FireSpeed = 5f;
+    public Camera Camera = null;
 
     [Networked] TickTimer delay { get; set; }
 
     private ChangeDetector _changeDetector;
 
+    public float MouseSensitivity = 10f;
+
     public override void Spawned()
     {
         _changeDetector = GetChangeDetector(ChangeDetector.Source.SimulationState);
+
+        if (HasInputAuthority)
+        {
+            Camera = Camera.main;
+            Camera.transform.SetParent(transform);
+            Camera.transform.localPosition = new Vector3(0, 1.8f, .3f);
+        }
     }
 
     public override void Render()
@@ -38,23 +49,24 @@ public class FPSPlayer : NetworkBehaviour
     }
     public override void FixedUpdateNetwork()
     {
-        if (HasInputAuthority)
+        if (GetInput(out FPSNetworkInputData data))
         {
-            if (GetInput(out FPSNetworkInputData data))
+            float MouseX = data.MouseX;
+            horizontalRotation += MouseX * MouseSensitivity;
+
+            transform.rotation = Quaternion.Euler(0, horizontalRotation, 0);
+
+            Vector3 move = Quaternion.Euler(0, transform.rotation.eulerAngles.y, 0) * new Vector3(data.Horizontal, 0, data.Vertical);
+
+            _cc.Move(move);
+
+            if (data.Buttons.IsSet(FPSNetworkInputData.JUMP) && _controller.isGrounded)
             {
-
-                Vector3 move = new Vector3(data.Horizontal, 0, data.Vertical) * Runner.DeltaTime;
-
-                _cc.Move(move);
-
-                if (data.Buttons.IsSet(FPSNetworkInputData.JUMP) && _controller.isGrounded)
-                {
-                    _cc.Jump();
-                }
-                if (move != Vector3.zero)
-                {
-                    gameObject.transform.forward = move;
-                }
+                _cc.Jump();
+            }
+            if (move != Vector3.zero)
+            {
+                gameObject.transform.forward = move;
             }
         }
     }

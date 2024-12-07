@@ -12,5 +12,7 @@ public struct FPSNetworkInputData : INetworkInput
 
     public float Horizontal;
     public float Vertical;
+    public float MouseX;
+    public float MouseY;
     public bool Jump;
 }

@@ -11,6 +11,8 @@ public class FPSSpawner : MonoBehaviour, INetworkRunnerCallbacks
 {
     bool _mouseButton0;
     bool _jump;
+    float _mouseX;
+    float _mouseY;
     public void OnConnectedToServer(NetworkRunner runner)
     {
 
@@ -116,6 +118,8 @@ public class FPSSpawner : MonoBehaviour, INetworkRunnerCallbacks
 
         data.Horizontal = Input.GetAxis("Horizontal");
         data.Vertical = Input.GetAxis("Vertical");
+        data.MouseX = _mouseX;
+        data.MouseY = _mouseY;
 
         if (_mouseButton0)
         {
@@ -172,9 +176,12 @@ public class FPSSpawner : MonoBehaviour, INetworkRunnerCallbacks
         }
     }
 
+
     private void Update()
     {
         _mouseButton0 = _mouseButton0 || Input.GetMouseButton(0);
+        _mouseX = Input.GetAxis("Mouse X");
+        _mouseY = Input.GetAxis("Mouse Y");
         _jump = _jump || Input.GetKey(KeyCode.Space);
     }
 }

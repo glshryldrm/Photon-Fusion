@@ -2702,18 +2702,42 @@ struct FPSNetworkInputData_t90EF9499BF14627FDEFB87A3C68D36F39A685AAD
 				#pragma pack(push, tp, 1)
 				struct
 				{
-					char ___Jump_OffsetPadding[12];
+					char ___MouseX_OffsetPadding[12];
+					float ___MouseX;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___MouseX_OffsetPadding_forAlignmentOnly[12];
+					float ___MouseX_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___MouseY_OffsetPadding[16];
+					float ___MouseY;
+				};
+				#pragma pack(pop, tp)
+				struct
+				{
+					char ___MouseY_OffsetPadding_forAlignmentOnly[16];
+					float ___MouseY_forAlignmentOnly;
+				};
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___Jump_OffsetPadding[20];
 					bool ___Jump;
 				};
 				#pragma pack(pop, tp)
 				struct
 				{
-					char ___Jump_OffsetPadding_forAlignmentOnly[12];
+					char ___Jump_OffsetPadding_forAlignmentOnly[20];
 					bool ___Jump_forAlignmentOnly;
 				};
 			};
 		};
-		uint8_t FPSNetworkInputData_t90EF9499BF14627FDEFB87A3C68D36F39A685AAD__padding[16];
+		uint8_t FPSNetworkInputData_t90EF9499BF14627FDEFB87A3C68D36F39A685AAD__padding[24];
 	};
 };
 #pragma pack(pop, tp)
@@ -2768,20 +2792,48 @@ struct FPSNetworkInputData_t90EF9499BF14627FDEFB87A3C68D36F39A685AAD_marshaled_p
 				#pragma pack(push, tp, 1)
 				struct
 				{
-					char ___Jump_OffsetPadding[12];
+					char ___MouseX_OffsetPadding[12];
+					float ___MouseX;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___MouseX_OffsetPadding_forAlignmentOnly[12];
+					float ___MouseX_forAlignmentOnly;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___MouseY_OffsetPadding[16];
+					float ___MouseY;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___MouseY_OffsetPadding_forAlignmentOnly[16];
+					float ___MouseY_forAlignmentOnly;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___Jump_OffsetPadding[20];
 					int32_t ___Jump;
 				};
 				#pragma pack(pop, tp)
 				#pragma pack(push, tp, 1)
 				struct
 				{
-					char ___Jump_OffsetPadding_forAlignmentOnly[12];
+					char ___Jump_OffsetPadding_forAlignmentOnly[20];
 					int32_t ___Jump_forAlignmentOnly;
 				};
 				#pragma pack(pop, tp)
 			};
 		};
-		uint8_t FPSNetworkInputData_t90EF9499BF14627FDEFB87A3C68D36F39A685AAD__padding[16];
+		uint8_t FPSNetworkInputData_t90EF9499BF14627FDEFB87A3C68D36F39A685AAD__padding[24];
 	};
 };
 struct FPSNetworkInputData_t90EF9499BF14627FDEFB87A3C68D36F39A685AAD_marshaled_com
@@ -2835,20 +2887,48 @@ struct FPSNetworkInputData_t90EF9499BF14627FDEFB87A3C68D36F39A685AAD_marshaled_c
 				#pragma pack(push, tp, 1)
 				struct
 				{
-					char ___Jump_OffsetPadding[12];
+					char ___MouseX_OffsetPadding[12];
+					float ___MouseX;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___MouseX_OffsetPadding_forAlignmentOnly[12];
+					float ___MouseX_forAlignmentOnly;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___MouseY_OffsetPadding[16];
+					float ___MouseY;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___MouseY_OffsetPadding_forAlignmentOnly[16];
+					float ___MouseY_forAlignmentOnly;
+				};
+				#pragma pack(pop, tp)
+				#pragma pack(push, tp, 1)
+				struct
+				{
+					char ___Jump_OffsetPadding[20];
 					int32_t ___Jump;
 				};
 				#pragma pack(pop, tp)
 				#pragma pack(push, tp, 1)
 				struct
 				{
-					char ___Jump_OffsetPadding_forAlignmentOnly[12];
+					char ___Jump_OffsetPadding_forAlignmentOnly[20];
 					int32_t ___Jump_forAlignmentOnly;
 				};
 				#pragma pack(pop, tp)
 			};
 		};
-		uint8_t FPSNetworkInputData_t90EF9499BF14627FDEFB87A3C68D36F39A685AAD__padding[16];
+		uint8_t FPSNetworkInputData_t90EF9499BF14627FDEFB87A3C68D36F39A685AAD__padding[24];
 	};
 };
 struct FindObjectsInactive_t10C7BE036CAD0178142374F945283DA50D02B87A 
