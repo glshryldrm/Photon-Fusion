@@ -10,13 +10,20 @@ public class FPSPlayer : NetworkBehaviour
     private float horizontalRotation;
 
     public float FireSpeed = 5f;
-    public Camera Camera = null;
+    [HideInInspector] public Camera Camera = null;
 
     [Networked] TickTimer delay { get; set; }
+    [Networked] public string AnimState { get; set; }
 
     private ChangeDetector _changeDetector;
 
     public float MouseSensitivity = 10f;
+    public Animator Anim;
+
+    const int ANIMSTATE_IDLE = 0;
+    const int ANIMSTATE_WALK = 1;
+
+    private int state = ANIMSTATE_IDLE;
 
     public override void Spawned()
     {
@@ -34,18 +41,19 @@ public class FPSPlayer : NetworkBehaviour
     {
         foreach (var change in _changeDetector.DetectChanges(this))
         {
-            //switch (change)
-            //{
-            //    case nameof(ChangeColor):
-            //        _material.color = ChangeColor;
-            //        break;
-            //}
+            switch (change)
+            {
+                case nameof(AnimState):
+                    Anim.CrossFade(AnimState, .01f);
+                    break;
+            }
         }
     }
     private void Awake()
     {
         _cc = GetComponent<NetworkCharacterController>();
         _controller = GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.Locked;
     }
     public override void FixedUpdateNetwork()
     {
@@ -60,13 +68,28 @@ public class FPSPlayer : NetworkBehaviour
 
             _cc.Move(move);
 
+            if (move.sqrMagnitude > 0 && state == ANIMSTATE_IDLE)
+            {
+                state = ANIMSTATE_WALK;
+                AnimState = "Walk";
+            }
+            else if (move.sqrMagnitude == 0 && state == ANIMSTATE_WALK)
+            {
+                state = ANIMSTATE_IDLE;
+                AnimState = "Idle";
+            }
+
             if (data.Buttons.IsSet(FPSNetworkInputData.JUMP) && _controller.isGrounded)
             {
                 _cc.Jump();
             }
-            if (move != Vector3.zero)
+
+            if (data.Buttons.IsSet(FPSNetworkInputData.MOUSEBUTTON0))
             {
-                gameObject.transform.forward = move;
+                Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
+                ray.origin += Camera.transform.forward;
+
+                Debug.DrawRay(ray.origin, ray.direction, Color.magenta, 3f);
             }
         }
     }

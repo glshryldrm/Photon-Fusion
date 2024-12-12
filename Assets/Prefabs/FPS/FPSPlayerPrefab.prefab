@@ -223,3 +223,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FireSpeed: 5
+  Camera: {fileID: 0}
+  _AnimState: 
+  MouseSensitivity: 10
+  Anim: {fileID: 5701441539464120158}
+--- !u!95 &5701441539464120158 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 27b45b2e1da1e6e438fb04c826f138f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 2194664201315351247}
+  m_PrefabAsset: {fileID: 0}

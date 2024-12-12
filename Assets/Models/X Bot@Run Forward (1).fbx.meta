@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f9971f8b450053041830625ad5a0467e
+guid: 4015670bccb92264281d4e8e408164f0
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -528,23 +528,23 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: X Bot@Run Forward(Clone)
+    - name: X Bot@Run Forward (1)(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Beta_Surface
-      parentName: X Bot@Run Forward(Clone)
+      parentName: X Bot@Run Forward (1)(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Beta_Joints
-      parentName: X Bot@Run Forward(Clone)
+      parentName: X Bot@Run Forward (1)(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: mixamorig:Hips
-      parentName: X Bot@Run Forward(Clone)
+      parentName: X Bot@Run Forward (1)(Clone)
       position: {x: 0.0023198924, y: 1.0719981, z: 0.016422745}
       rotation: {x: 0.006458369, y: 0.000000021647303, z: -0.00000025334845, w: 0.99997914}
       scale: {x: 1, y: 1, z: 0.99999994}
