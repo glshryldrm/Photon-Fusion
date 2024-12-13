@@ -13,7 +13,9 @@ public class FPSPlayer : NetworkBehaviour
     [HideInInspector] public Camera Camera = null;
 
     [Networked] TickTimer delay { get; set; }
+    [Networked] public int Health { get; set; }
     [Networked] public string AnimState { get; set; }
+    public int WeaponDamage = 20;
 
     private ChangeDetector _changeDetector;
 
@@ -24,6 +26,7 @@ public class FPSPlayer : NetworkBehaviour
     const int ANIMSTATE_WALK = 1;
 
     private int state = ANIMSTATE_IDLE;
+    private bool dead = false;
 
     public override void Spawned()
     {
@@ -46,6 +49,13 @@ public class FPSPlayer : NetworkBehaviour
                 case nameof(AnimState):
                     Anim.CrossFade(AnimState, .01f);
                     break;
+                case nameof(Health):
+                    if (!dead && Health <= 0)
+                    {
+                        dead = true;
+                        Anim.CrossFade("Die", .01f);
+                    }
+                    break;
             }
         }
     }
@@ -57,7 +67,7 @@ public class FPSPlayer : NetworkBehaviour
     }
     public override void FixedUpdateNetwork()
     {
-        if (GetInput(out FPSNetworkInputData data))
+        if (!dead && GetInput(out FPSNetworkInputData data))
         {
             float MouseX = data.MouseX;
             horizontalRotation += MouseX * MouseSensitivity;
@@ -84,12 +94,26 @@ public class FPSPlayer : NetworkBehaviour
                 _cc.Jump();
             }
 
-            if (data.Buttons.IsSet(FPSNetworkInputData.MOUSEBUTTON0))
+            if (data.Buttons.IsSet(FPSNetworkInputData.MOUSEBUTTON0) && delay.ExpiredOrNotRunning(Runner))
             {
+                delay = TickTimer.CreateFromSeconds(Runner, FireSpeed);
+
                 Ray ray = Camera.ScreenPointToRay(Input.mousePosition);
                 ray.origin += Camera.transform.forward;
 
                 Debug.DrawRay(ray.origin, ray.direction, Color.magenta, 3f);
+
+                if (Runner.GetPhysicsScene().Raycast(ray.origin, ray.direction, out var hit))
+                {
+                    if (hit.transform.TryGetComponent<FPSPlayer>(out var player))
+                    {
+                        if (!player.dead)
+                        {
+                            player.Health -= WeaponDamage;
+                        }
+                        Debug.Log("Bir oyuncu vuruldu. " + (player.Health <= 0 ? "ve öldü" : "kalan saðlýðý: " + player.Health));
+                    }
+                }
             }
         }
     }

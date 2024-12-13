@@ -222,10 +222,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86031e2ec24b2554db8f209b84882237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FireSpeed: 5
+  FireSpeed: 0.33
   Camera: {fileID: 0}
+  _Health: 50
   _AnimState: 
-  MouseSensitivity: 10
+  WeaponDamage: 20
+  MouseSensitivity: 5
   Anim: {fileID: 5701441539464120158}
 --- !u!95 &5701441539464120158 stripped
 Animator:
